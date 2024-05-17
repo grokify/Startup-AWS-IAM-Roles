@@ -1,15 +1,14 @@
 # Infrastructure Diagram for Small Startup
 
-
-
 ## 10,000 Foot Overview
 
-In our [diagram](https://github.com/RealityShift/Startup-AWS-IAM-Roles/blob/master/small/Small.png), we show a demo of how we suggest the infrastructure could be made for a small startup. In this diagram, everything is cloud based whether it's managed by the startup or 3rd party. The IAM roles you see are examples of how IAM roles would fit into this infrastructure but keep in mind, they would only be able to support AWS resources.
+In our [diagram](small.png), we show a demo of how we suggest the infrastructure could be made for a small startup. In this diagram, everything is cloud based whether it's managed by the startup or 3rd party. The IAM roles you see are examples of how IAM roles would fit into this infrastructure but keep in mind, they would only be able to support AWS resources.
+
+![](small.png)
 
 ## 3rd Party Web Apps
 
 We utilize several 3rd party web applications to help save cost and create efficiencies for our startups. We assume the use of SendBird for chat with customers, G Suite for email within the startup, GitLab for version control, and ASANA for ticket and team tracking. We also will be utilizing CloudFlare for DDoS protection against our web application servers.
-
 
 ## AWS Infrastructure
 
