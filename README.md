@@ -1,6 +1,15 @@
 # IAM Roles for Startups
 
+## Go Language SDK
 
+Note the primary AWS Go SDK does not support an IAM Policy struct as different services have different Poiicy Document definitions. The primary AWS Go SDK has a [`CreatePolicyInput` struct](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/iam#CreatePolicyInput) which takes a policy document as a string.
+
+Various other AWS and 3rd party Go modules provide a struct that can be used per below.
+
+1. https://github.com/aws/aws-sdk-go-v2/issues/225
+1. https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.PolicyDocument.html - https://pkg.go.dev/github.com/aws/aws-cdk-go/awscdk/v2/awsiam#PolicyDocument
+1. https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/gov2/iam/actions/policies.go - https://pkg.go.dev/github.com/awsdocs/aws-doc-sdk-examples/gov2/iam@v0.0.0-20240515184554-f5a74bb68b09/actions#PolicyDocument
+1. https://github.com/micahhausler/aws-iam-policy - https://pkg.go.dev/github.com/micahhausler/aws-iam-policy@v0.4.2/policy#Policy
 
 ## Motivation
 
